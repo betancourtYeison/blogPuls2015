@@ -67,8 +67,8 @@ function mostrarOcultarFormulario(){
 	return false;
 }
 
-$('nav').on('click', function(){ console.log("Soy un nav y me hicieron click");})
-$('nav ul').on('click', function(){ console.log("Soy un ul y me hicieron click");})
+//$('nav').on('click', function(){ console.log("Soy un nav y me hicieron click");})
+//$('nav ul').on('click', function(){ console.log("Soy un ul y me hicieron click");})
 
 //Eventos
 var msg = 'https://';
@@ -76,11 +76,11 @@ $button.click(mostrarOcultarFormulario);
 $form.on('submit', agregarPost)
 	.find('#url')
 	.on('focus', function(){
-		console.log($url.val());
+		//console.log($url.val());
 		$url.val(msg);
 	})
 	.on('blur', function(){
 		msg = $url.val();
-		console.log(msg);
+		//console.log(msg);
 		$url.val('');
 	});
