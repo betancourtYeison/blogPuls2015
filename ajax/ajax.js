@@ -61,13 +61,13 @@ function climacallback(datos) {
 }
 
 function loadLogos() {
-	$.get('http://localhost/blogPuls2015/ajax/html/ajax_html.html', function(html) {
+	$.get('http://betancourtyeison.github.io/blogPuls2015/ajax/html/ajax_html.html', function(html) {
 		$('footer').append(html);
 	});
 }
 
 function inUser() {
-	$.get('http://localhost/blogPuls2015/ajax/resources/ajax_json.json', function(datos) {
+	$.get('http://betancourtyeison.github.io/blogPuls2015/ajax/resources/ajax_json.json', function(datos) {
 		var avatar = new Image();
 		avatar.src = datos.avatar2;
 		avatar.title = datos.nombre+" "+datos.apellido;
@@ -76,7 +76,7 @@ function inUser() {
 }
 
 function outUser() {
-	$.get('http://localhost/blogPuls2015/ajax/resources/ajax_json.json', function(datos) {
+	$.get('http://betancourtyeison.github.io/blogPuls2015/ajax_json.json', function(datos) {
 		var avatar = new Image();
 		avatar.src = datos.avatar;
 		avatar.title = datos.nombre+" "+datos.apellido;
