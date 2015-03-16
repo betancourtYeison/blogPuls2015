@@ -1,9 +1,279 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
 <head>
-	<title>BlogPuls2015</title>
+	<meta charset="utf-8" />
+	<meta name="description" content="Proyecto de la primera generación del 2015 del curso de diseño web online" />
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1"/>
+	<title>Puls2015: Comunidad de Desarrollo</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css' />
+	<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+	<link rel="stylesheet" type="text/css" href="css/estilo.css" />
 </head>
 <body>
-	<h1>Blog</h1>
+	<header>
+		<figure id="logo">
+			<img src="resources/logo.png" />
+		</figure>
+		<h1>
+			Puls 2015: Comunidad de Desarrollo
+		</h1>
+		<figure id="avatar">
+			<img src="resources/avatar.jpg" />
+			<!-- Avatar desde Ajax -->
+		</figure>
+	</header>
+	<nav>		
+		<ul>
+			<li><a href="#">Python</a></li>
+			<li><a href="#">HTML5</a></li>
+			<li><a href="#">Javascript</a></li>
+			<li><a href="#">CSS3</a></li>
+			<li><a href="#">DJango</a></li>
+			<li><a href="http://localhost/mejorandola/otrosEjemplos/geolocalizacion.html">Geolocalización</a></li>
+			<li><a href="http://localhost/mejorandola/otrosEjemplos/gitHubAPI.html">GitHub API</a></li>
+			<li id="publicar_nav">
+				<a href="#" class="icon-pencil" id="mostrar-form">Publicar</a>
+			</li>
+		</ul>
+	</nav>
+	<form action="" id="formulario" class="formulario">
+		<!--<label for="titulo">Título: </label>-->
+		<input type="text" id="titulo" placeholder="Título" required />
+		<!--<label for="url">Link: </label>-->
+		<input type="url" id="url" placeholder="Enlace Web" required />
+		<input type="submit" value="Agregar" />
+	</form>
+	<aside>
+		<div id="clima"></div>
+		<div id="geo"></div>
+		<video width="320" height="240" controls autoplay>
+			<source src="resources/lecturas.m4v" type="video/m4v">
+			<source src="resources/lecturas.ogg" type="video/ogg">
+			<!-- Actualiza tu navegador -->
+		</video>
+	</aside>
+	<section id="contenido">
+		<article class="item">
+			<figure class="imagen_item">
+				<img src="resources/imagen.jpg" />
+			</figure>
+			<h2 class="titulo_item">
+				<a href="#">Aspen, un framework para Python</a>
+			</h2>
+			<div class="autor_item">
+				Por <a href="#">Yeison Betancourt</a>
+			</div>
+			<div class="datos_item">
+				<a href="#" class="tag_item">Desarrollo Web</a>
+				<span class="fecha_item">
+					Hace <strong>5</strong> min
+				</span>
+			</div>
+			<div class="votacion">
+				<a href="#" class="up icon-arrow-up"></a>
+				696
+				<a href="#" class="down icon-arrow-down"></a>
+				<a href="#" class="comentarios_item">3</a>
+				<a href="#" class="guardar_item icon-star-full"></a>
+			</div>
+		</article>
+		<article class="item">
+			<figure class="imagen_item">
+				<img src="resources/imagen.jpg" />
+			</figure>
+			<h2 class="titulo_item">
+				<a href="#">Top 5 de herramientas para realizar SEO</a>
+			</h2>
+			<div class="autor_item">
+				Por <a href="#">Yeison Betancourt</a>
+			</div>
+			<div class="datos_item">
+				<a href="#" class="tag_item">Desarrollo Web</a>
+				<span class="fecha_item">
+					Hace <strong>5</strong> min
+				</span>
+			</div>
+			<div class="votacion">
+				<a href="#" class="up icon-arrow-up"></a>
+				696
+				<a href="#" class="down icon-arrow-down"></a>
+				<a href="#" class="comentarios_item">3</a>
+				<a href="#" class="guardar_item icon-star-full"></a>
+			</div>
+		</article>
+		<article class="item">
+			<figure class="imagen_item">
+				<img src="resources/imagen.jpg" />
+			</figure>
+			<h2 class="titulo_item">
+				<a href="#">Máscara de recorte en humo con After Effects</a>
+			</h2>
+			<div class="autor_item">
+				Por <a href="#">Yeison Betancourt</a>
+			</div>
+			<div class="datos_item">
+				<a href="#" class="tag_item">Desarrollo Web</a>
+				<span class="fecha_item">
+					Hace <strong>5</strong> min
+				</span>
+			</div>
+			<div class="votacion">
+				<a href="#" class="up icon-arrow-up"></a>
+				696
+				<a href="#" class="down icon-arrow-down"></a>
+				<a href="#" class="comentarios_item">3</a>
+				<a href="#" class="guardar_item icon-star-full"></a>
+			</div>
+		</article>
+		<article class="item">
+			<figure class="imagen_item">
+				<img src="resources/imagen.jpg" />
+			</figure>
+			<h2 class="titulo_item">
+				<a href="#">Vagrant, crea entornos de desarrollo virtualizados</a>
+			</h2>
+			<div class="autor_item">
+				Por <a href="#">Yeison Betancourt</a>
+			</div>
+			<div class="datos_item">
+				<a href="#" class="tag_item">Desarrollo Web</a>
+				<span class="fecha_item">
+					Hace <strong>5</strong> min
+				</span>
+			</div>
+			<div class="votacion">
+				<a href="#" class="up icon-arrow-up"></a>
+				696
+				<a href="#" class="down icon-arrow-down"></a>
+				<a href="#" class="comentarios_item">3</a>
+				<a href="#" class="guardar_item icon-star-full"></a>
+			</div>
+		</article>
+		<article class="item">
+			<figure class="imagen_item">
+				<img src="resources/imagen.jpg" />
+			</figure>
+			<h2 class="titulo_item">
+				<a href="#">Automatizar tareas con Nginx y Fabric</a>
+			</h2>
+			<div class="autor_item">
+				Por <a href="#">Yeison Betancourt</a>
+			</div>
+			<div class="datos_item">
+				<a href="#" class="tag_item">Desarrollo Web</a>
+				<span class="fecha_item">
+					Hace <strong>5</strong> min
+				</span>
+			</div>
+			<div class="votacion">
+				<a href="#" class="up icon-arrow-up"></a>
+				696
+				<a href="#" class="down icon-arrow-down"></a>
+				<a href="#" class="comentarios_item">3</a>
+				<a href="#" class="guardar_item icon-star-full"></a>
+			</div>
+		</article>
+		<article class="item">
+			<figure class="imagen_item">
+				<img src="resources/imagen.jpg" />
+			</figure>
+			<h2 class="titulo_item">
+				<a href="#">Dominio virtual para Laravel en Ubuntu</a>
+			</h2>
+			<div class="autor_item">
+				Por <a href="#">Yeison Betancourt</a>
+			</div>
+			<div class="datos_item">
+				<a href="#" class="tag_item">Desarrollo Web</a>
+				<span class="fecha_item">
+					Hace <strong>5</strong> min
+				</span>
+			</div>
+			<div class="votacion">
+				<a href="#" class="up icon-arrow-up"></a>
+				696
+				<a href="#" class="down icon-arrow-down"></a>
+				<a href="#" class="comentarios_item">3</a>
+				<a href="#" class="guardar_item icon-star-full"></a>
+			</div>
+		</article>
+	</section>
+	<footer>
+		<p>
+			<strong>Powered by Yeison Betancourt S.</strong>
+		</p>
+		<p>
+			Saidw.com 2015
+		</p>
+	</footer>
+	<script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+	<script src="js/formulario.js"></script>
+	<script src="ajax/ajax.js"></script>
+	<script>
+		/*	
+		window.onload = function(){
+			console.log("Ya se disparo el evento Onload");
+		}
+
+		$(function(){
+			console.log("Ya se disparo el evento DOMContentLoaded");
+			console.log($('#publicar_nav')[0]);
+			$('#publicar_nav a').addClass('disabled');
+			$('#publicar_nav a').removeClass('disabled');
+			$('#publicar_nav a').hasClass('disabled');
+			$('h1').html('Hey que lindo');
+			$('h1').html('<a href="https://platzi.com/"><strong>Mejorando.la</strong></a>');
+
+			var ls = localStorage;
+			var ss = sessionStorage;
+			ss.setItem('nombre','Yeison');
+
+		});
+		*/
+		/*$(function(){
+			$('#publicar_nav a').on('click', function(){
+				$(this).toggleClass('disabled');
+			});
+		});*/
+	
+		$(function(){
+			var geo = navigator.geolocation;
+
+			function geo_exito(position) {
+				var lat = position.coords.latitude;
+				var lon = position.coords.longitude;
+
+				console.log(position.coords.accuracy);
+
+				var mapa = new Image();
+				mapa.src = "http://maps.googleapis.com/maps/api/staticmap?center="+lat+","+lon+"&zoom=13&size=200x200&sensor=false&maptype=hybrid";
+
+				$('#geo').append(mapa);
+
+				obtenerGeoInformacion(lat, lon);
+			}
+
+			function geo_error() {
+				console.log("Hhhmmm... esto es incómodo, no se donde estás.");
+			}
+
+			geo.getCurrentPosition(geo_exito, geo_error, {
+			  enableHighAccuracy: true,
+			  timeout: 5000,
+			  maximumAge: 0
+			});
+
+			loadLogos();
+
+			$('#avatar')
+				.mouseenter( function(){
+					inUser();
+				})
+				.mouseleave( function(){
+					outUser();
+				});
+	
+		});
+	</script>
 </body>
 </html>
